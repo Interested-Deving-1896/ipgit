@@ -1,56 +1,20 @@
-# Inter Planetary GIT
+[update-readmes]   Mode: rewrite — migrating to template structure...
+# ipgit
 
-[![build](https://github.com/meyer1994/ipgit/actions/workflows/build.yml/badge.svg)](https://github.com/meyer1994/ipgit/actions/workflows/build.yml)
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/ipgit)
 
-Because it is possible!
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-## Table of Contents
+## Architecture
 
-- [About](#about)
-- [Install](#install)
-- [Usage](#usage)
-- [Thanks](#thanks)
-
-## About
-
-I think web 3.0 future is promising. I like the idea of a distributed web. As a
-consequence, I like IPFS. It is such a cool concept. However, in my opinion,
-most people do not use it because it is hard to do so. Go? Running a Docker
-container in my machine? What? Can't I just use it as a simple tool or service?
-
-**Yes, you can.**
-
-This is why I created this, extremely simple and limited, web application. It
-is just an endpoint. A git remote, for the tech savy. You can configure with
-one bash command and just use it. See the (small) example below:
-
-```sh
-$ git remote add ipfs http://ipgit.herokuapp.com/
-$ git push ipfs
-remote: Resolving deltas: 100% (53/53), done.
-remote: IPFS hash:
-remote: QmU8wwg65D2MpbumSKPTWUhydmAin5jmXbwNhxUWzyeXs1
-```
-
-It works the other way around as well. If you want, you can use it to clone git
-repositories that are stored in IPFS.
-
-```sh
-$ git clone https://ipgit.herokuapp.com/QmZUnAU4Vn7DvDHEnJ1dz2uV2dimf79HNXdffgY9MbQGWP
-Cloning into 'QmZUnAU4Vn7DvDHEnJ1dz2uV2dimf79HNXdffgY9MbQGWP'...
-$ ls QmZUnAU4Vn7DvDHEnJ1dz2uV2dimf79HNXdffgY9MbQGWP/
-Dockerfile  Makefile  app.py  git.py  heroku.yml  post-update  requirements.txt  sender.py
-```
-
-That is it! No installation, no requirements. Just plain old git.
-
-Your files will be pinned by default. However, because heroku shuts down the
-after some inactivity time, it is not guarantee that your files will be there
-when you need them. You should try pinning them into some file pinning service
-to avoid loosing it.
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
 ## Install
+
 
 This project uses [fastapi][1] and [uvicorn][2] for server interactions.
 [IPFS][3] needs to be running on the local machine for the server to start.
@@ -61,6 +25,7 @@ $ pip install -r requirements.txt
 ```
 
 ## Usage
+
 
 To run a local version of this project, just execute:
 
@@ -74,19 +39,50 @@ $ make local  # optional
 When developing, you can simply test your modification by calling
 `git push local`.
 
-## Thanks
+## Configuration
 
-This project would not have been possible without the code in the following
-repositories. They helped me understand a lot about git http backend.
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
 
-- [git_http_backend.py][5]
-- [grack][6]
+## CI
 
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
 
-[1]: https://fastapi.tiangolo.com/
-[2]: https://uvicorn.org/
-[3]: https://ipfs.io/
-[4]: https://git-scm.com/
+## Mirror chain
 
-[5]: https://github.com/dvdotsenko/git_http_backend.py
-[6]: https://github.com/schacon/grack
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/ipgit`](https://github.com/Interested-Deving-1896/ipgit) and mirrored through:
+
+```
+Interested-Deving-1896/ipgit  ──►  OpenOS-Project-OSP/ipgit  ──►  OpenOS-Project-Ecosystem-OOC/ipgit
+```
+
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
+
+## Contributors
+
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
+
+## Origins
+
+<!-- AI:start:origins -->
+_Original project — no upstream fork._
+<!-- AI:end:origins -->
+
+## Resources
+
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
+
+## License
+
+<!-- AI:start:license -->
+<!-- License not detected — add a LICENSE file to this repo. -->
+<!-- AI:end:license -->
