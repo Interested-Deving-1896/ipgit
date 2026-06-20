@@ -66,7 +66,12 @@ Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-
 ## Contributors
 
 <!-- AI:start:contributors -->
-_Contributors pending._
+- [@dependabot[bot]](https://github.com/dependabot[bot]) - 108 commits  
+- [@meyer1994](https://github.com/meyer1994) - 87 commits  
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]) - 16 commits  
+- [@Interested-Deving-1896](https://github.com/Interested-Deving-1896) - 1 commit  
+
+*Note: This repository may be a mirror. Please check the upstream source for additional context.*
 <!-- AI:end:contributors -->
 
 ## Origins
